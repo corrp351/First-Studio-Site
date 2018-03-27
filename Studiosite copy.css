@@ -1,0 +1,26 @@
+body{
+	width:100%;
+	height:100%;
+	display:flex;
+	margin:0;
+}
+
+#indexprops{
+	overflow:hidden;
+}
+
+#index{
+	width:100%;
+	height:100%;
+	display:flex;
+	margin:0;
+	position:absolute;
+}
+
+#bigpurple{
+	width:20%;
+	height:20%;
+	position:relative;
+	left:150px
+	top:250px;
+}
