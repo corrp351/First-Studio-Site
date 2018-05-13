@@ -5,6 +5,9 @@ body{
 	display:flex;
 	margin:0;
 }
+.scrollBody{
+	overflow:hidden;
+}
 #index{
 	width:100%;
 	height:100%;
@@ -12,22 +15,7 @@ body{
 	margin:0;
 	position:absolute;
 }
-/*This will hopefully be used throughout site...once I learn more coding*/
-/*a.button{
-	left:450px;
-	top:250px;
-	border: none;
-	padding:2px;
-	opacity: 0;
-	transition: 0.3s;
-	z-index: 3;
-	position: absolute;
-}
-a.button:hover{
-	opacity: 1;
-	z-index: 3;
-}*/
-/*this section*/
+
 
 #bigpurple{
 	width:100%;
@@ -70,12 +58,13 @@ a.button:hover{
 	margin:0;
 	position:absolute;
 	background-color:#8D95CA;
-	overflow:hidden;
+/*	overflow:hidden;*/
+	z-index: 3;
 }
-#regorange{
-	width:5%;
+#regorange2{
+	width:10%;
 	height:25%;
-	position:absolute;
+	position:fixed;
 	left:10px;
 	top:50px;
 	z-index: 3;
@@ -83,7 +72,7 @@ a.button:hover{
 #regblue{
 	width:5%;
 	height:25%;
-	position:absolute;
+	position:fixed;
 	left:10px;
 	top:525px;
 	z-index: 3;
@@ -184,117 +173,71 @@ a.button:hover{
 	left:1190px;
 	z-index: 3;
 }
+
+
 .purplebackground{
 	width:100%;
 	height:100%;
 	display:flex;
 	margin:0;
-	position:absolute;
-	z-index: 2;
+	position:fixed;
+	z-index: 3;
+}
+#divSize{
+	width: 100%;
+	height:100%;
+}
+.imagesScroll{
+	overflow-x:scroll;
+	overflow-y: hidden;
+}
+.pictures{
+	width:600px;
+	height:600px;
+	z-index: 1;
+	top:100px;
+	position: absolute;
+	display:inline-block;
 }
 #picA{
-	width:100%;
-	height:100%;
-	position:relative;
-	top:0px;
-	left:-160px;
-	z-index: 1;
+	left:300px;
 }
 #picB{
-	width:60%;
-	height:100%;
-	position:relative;
-	top:100px;
-	left:300px;
-	z-index: 1;
+	left:950px;
 }
 #picC{
-	width:60%;
-	height:70%;
-	position:relative;
-	top:100px;
-	left:330px;
-	z-index: 1;
+	left:1600px;
 }
 #picD{
-	width:50%;
-	height:60%;
-	position:relative;
-	top:140px;
-	left:340px;
-	z-index: 1;
+	left:2250px;
 }
 #picE{
-	width:50%;
-	height:110%;
-	position:relative;
-	top:100px;
-	left:340px;
-	z-index: 1;
+	left:2900px;
 }
 #picF{
-	width:50%;
-	height:60%;
-	position:relative;
-	top:120px;
-	left:330px;
-	z-index: 1;
+	left:3550px;
 }
 #picG{
-	width:50%;
-	height:60%;
-	position:relative;
-	top:125px;
-	left:330px;
-	z-index: 1;
+	left:4200px;
 }
 #picH{
-	width:50%;
-	height:60%;
-	position:relative;
-	top:130px;
-	left:330px;
-	z-index: 1;
+	left:4850px;
 }
 #picI{
-	width:60%;
-	height:70%;
-	position:relative;
-	top:100px;
-	left:300px;
-	z-index: 1;
+	left:5500px;
 }
 #picJ{
-	width:50%;
-	height:80%;
-	position:relative;
-	top:100px;
-	left:340px;
-	z-index: 1;
+	left:6150px;
 }
 #picK{
-	width:50%;
-	height:80%;
-	position:relative;
-	top:80px;
-	left:340px;
-	z-index: 1;
+	left:6800px;
 }
 #picL{
-	width:50%;
-	height:70%;
-	position:relative;
-	top:120px;
-	left:340px;
-	z-index: 1;
+	left:7450px;
 }
 #picM{
-	width:50%;
-	height:90%;
-	position:relative;
-	top:50px;
-	left:340px;
-	z-index: 1;
+	left:8100px;
+	padding-right: 300px;
 }
 
 
@@ -308,12 +251,18 @@ a.button:hover{
 	position:absolute;
 	background-color:#001953;
 	overflow:hidden;
-	z-index: 2;
+	z-index: 5;
 }
 .imageselection{
 	width:33%;
 	height:33%;
 	position:relative;
+}
+.grow{
+	transition:all .3s ease-in-out;
+}
+.grow:hover{
+	transform: scale(1.5);
 }
 #pic1{
 	top:0px;
@@ -382,8 +331,6 @@ a.button:hover{
 	position: absolute;
 }
 #pic13{
-	/*width:100%;
-	height:60%;*/
 	top:470px;
 	left:900px;
 	position: absolute;
@@ -392,10 +339,10 @@ a.button:hover{
 
 
 /*Combo pages*/
-#regorange{
+#regorange1{
 	width:10%;
 	height:25%;
-	position:absolute;
+	position:fixed;
 	left:10px;
 	top:30px;
 	z-index: 3;
@@ -533,7 +480,7 @@ a.button:hover{
 #regblue1{
 	width:9%;
 	height:32%;
-	position:absolute;
+	position:fixed;
 	left:25px;
 	top:525px;
 	z-index: 3;
